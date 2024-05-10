@@ -1,4 +1,129 @@
-.App {
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box1{
+  margin: 10px;
+  padding: 20px;
+  border-color: black;
+  border-radius: 2%; 
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  /* /* border-radius: 50% 50px 30px; */
+}
+
+.flex-box{
+  margin-top: 40px;
+  margin-left: 40px;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.details{
+  padding: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+/* .flex-container div {
+  height: 100%; */
+  /* flex: 1 0 200px; This line makes the child divs responsive and take up the full area */
+  /* margin-bottom: 10px; */
+/* } */
+
+@media (max-width: 1505px) {
+  .box1{
+    min-height: 30rem;
+    width: 17rem;
+    border-radius: 6%;
+    padding: 0;
+    margin: 0;
+    border-color: black;
+    border-width: 0px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* background-color: rgb(178, 172, 148); */
+  }
+  .flex-container{
+    margin: 5px;
+    padding: 10px;
+    height: 98%;
+    border-radius: 2%;
+    border-width: 1px;
+    background-color: rgb(254, 243, 199);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-color: rgb(123, 123, 123);
+  }
+ .flex-box{
+    flex-direction: column;
+    margin: 1px;
+    margin-top: 5px;
+    padding: 0;
+    height: 8rem;
+    width: 8rem;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+  .flex-box2{
+    flex-direction: column;
+    margin: 0 10px 0;
+    padding: 0;
+    height: 14rem;
+    width: 8rem;
+  }
+  .flex-box{
+    /* align-items: center;
+    margin: 10px;
+    padding: 20px; */
+    /* min-width: 9rem; */
+    /* display: flex; */
+    /* justify-content: left; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* height: 9rem; */
+  }
+
+  .details{
+    font-size: medium;
+  }
+  /* .box-img{
+    
+  } */
+}
+
+/* .flex-container {
+  position: relative;
+  display: flex; */
+  /* justify-items: normal; */
+  /* justify-content: space-around; */
+  /* flex-direction: row; */
+  /* width: 100%; */
+  /* font-size: 30px; */
+  /* text-align: center; */
+/* } */
+
+/* .flex-container .flex-box{ */
+  /* position: absolute; */
+  /* height: 100vh; */
+  /* height: 20rem; */
+  /* height: 10px; */
+  /* width: 50%; */
+/* } */
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+/* @media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+} */
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +160,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
